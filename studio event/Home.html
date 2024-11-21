@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Event Management</title>
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./css/Home.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <div class="img-show">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <b>ALBY's</b>
+            <p class="brand-subtitle">events</p>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img src="./icons/menu.png" alt="Menu" />
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#services">services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#project">project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#reviews">reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#booking">booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-us">about us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="main-caption">
+        <div id="caption1">Capturing Moments, Creating Memories</div>
+<div id="caption2">with us</div>
+<div id="caption3">
+  We are providing professional photography services to immortalize your events and celebrations.
+</div>
+
+        <div>Connect with us</div>
+            
+          <div class="social-media">
+            <img src="./icons/instagram.png" />
+            <img src="./icons/facebook.png" />
+            <img src="./icons/youtube.png" />
+          </div>
+          
+      </div>
+
+      <!-- Slideshow Images -->
+      <div class="img-slide active">
+        <img
+          src="./images/img1.jpg"
+          alt="Image 1"
+          style="width: 100%; height: 100%; object-fit: cover"
+        />
+      </div>
+      <div class="img-slide">
+        <img
+          src="./images/img2.jpg"
+          alt="Image 2"
+          style="width: 100%; height: 100%; object-fit: cover"
+        />
+      </div>
+      <div class="img-slide">
+        <img
+          src="./images/img3.jpg"
+          alt="Image 3"
+          style="width: 100%; height: 100%; object-fit: cover"
+        />
+      </div>
+    </div>
+
+<section id="services">
+    <div class="service-container">
+      <div class="service-text">
+        Services provided by us
+      </div>
+      <p style="margin-bottom: 20px;">
+        We specialize in creating unforgettable experiences tailored to your needs. Our range of services includes:
+    </p>
+    
+      <div class="service-details">
+        <div class="service-box photography-services">
+          <h4>Photography Services</h4>
+          <p>Details of the photography services we offer for different events, such as weddings, corporate events, birthdays, and more.</p>
+        </div>
+    
+        <div class="service-box event-planning">
+          <h4>Event Planning</h4>
+          <p>Information on our event planning and coordination services for seamless, stress-free events.</p>
+        </div>
+    
+        <div class="service-box packages-pricing">
+          <h4>Professional Interview Videography</h4>
+          <p>Our professional interview videography services capture high-quality footage that effectively conveys your message.</p>
+        </div>
+    
+        <div class="service-box additional-services">
+          <h4>Additional Services</h4>
+          <p>We offer add-ons such as videography, drone services, photo booths, and professional editing services.</p>
+        </div>
+      </div>
+    </div>
+</section>
+    
+     
+     <!-- project -->
+     <section id="project">
+<div class="section-heading">
+  <h2>Our Projects</h2>
+  <p>Explore our diverse range of projects that showcase our creativity and expertise in various fields. From stunning event photography to meticulous event planning and professional interviews, we bring your vision to life with passion and professionalism.</p>
+  <p style="margin-top: 20px;"><u>Click the images below to show details</u></p>
+</div>
+<div class="image-gallery">
+  <div class="image-container" data-index="0">
+    <img src="./images/projectimg/1.jpeg" alt="Image 1" />
+    <div class="image-overlay">Event Photography</div> <!-- Text overlay -->
+  </div>
+  <div class="image-container" data-index="1">
+    <img src="./images/projectimg/8.jpeg" alt="Image 2" />
+    <div class="image-overlay">Event Planning</div> <!-- Text overlay -->
+  </div>
+  <div class="image-container" data-index="2">
+    <img src="./images/projectimg/12.jpg" alt="Image 3" />
+    <div class="image-overlay">Professional Interview</div> <!-- Text overlay -->
+  </div>
+</div>
+
+<!-- Area to display selected title and text separately -->
+<div id="project-description" class="project-description">
+  <h3 id="project-title">Select an image to see the project description here.</h3>
+  <p id="project-text">Click on an image above to view details</p>
+</div>
+    
+    <!-- Popup Modal -->
+     <div class="pop-container">
+    <div id="popup-modal" class="popup-modal">
+      <span class="close-btn">&times;</span>
+      <div class="popup-content">
+        
+      </div>
+    </div>
+  </div>
+     </section>
+
+     <section id="reviews">
+<!-- review section -->
+<div class="main-review-container ">
+  <section class="review-section">
+    <h2 class="review-heading">Customer Reviews</h2>
+    <div class="review-container">
+      <div class="review" id="review1">
+        <div class="review-avatar-container">
+                    <img src="./icons/man.png" alt="Avatar" class="review-avatar" />
+
+        </div>
+        <div class="review-content">
+          <h4 class="username">User1</h4>
+          <p class="review-message">This service is amazing! Highly recommended!</p>
+        </div>
+      </div>
+      <div class="review" id="review2">
+        <div class="review-avatar-container">
+          <img src="./icons/man.png" alt="Avatar" class="review-avatar" />
+        </div>
+        <div class="review-content">
+          <h4 class="username">User2</h4>
+          <p class="review-message">A fantastic experience from start to finish.</p>
+        </div>
+      </div>
+      <div class="review" id="review3">
+        <div class="review-avatar-container">
+          <img src="./icons/man.png" alt="Avatar" class="review-avatar" />
+        </div>
+        <div class="review-content">
+          <h4 class="username">User3</h4>
+          <p class="review-message">I loved every moment! Will be back again.</p>
+        </div>
+      </div>
+    </div>
+    <div class="input-container">
+      <input type="text" id="username" placeholder="Your name" class="review-input" required />
+      <textarea id="reviewMessage" placeholder="Your review" class="review-textarea" required></textarea>
+      <button id="addReviewButton" class="add-review-btn">Add Your Review</button>
+    </div>
+  </section>
+</div>
+     </section>
+
+<!-- BOOKING SECTION -->
+<section id="booking">
+<div class="booking-section">
+  <h2 class="booking-title">Book Our Service</h2>
+  <p>Experience top-notch service tailored to your needs, delivered with professionalism, creativity, and an unwavering commitment to excellence. Whether it's capturing cherished memories, planning seamless events, or offering bespoke packages, we go above and beyond to ensure every detail is perfect. Our team of experts combines passion with precision to make your special moments truly unforgettable. Book now and let us transform your vision into reality, with quality you can trust and results that exceed expectations!</p>
+  <div class="booking-container">
+      <form class="booking-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="tel" placeholder="Phone Number" required>
+          <input type="email" placeholder="Email" required>
+          <button type="submit" class="book-button">Book Our Service</button>
+      </form>
+  </div>
+</div>
+</section>
+<!-- About SECTION -->
+<section id="about-us">
+<!-- About SECTION -->
+<div class="about-section">
+  <h2 class="about-title">About Us</h2>
+  <div class="about-content">
+    <p>
+      Welcome to ALBY's Events, where we bring your visions to life with creativity, precision, and passion...
+    </p>
+    <p>
+      Our mission is to transform your special occasions into extraordinary experiences...
+    </p>
+    <hr />
+    <p>Why Choose Us?</p>
+    <p>Professional and experienced team dedicated to excellence</p>
+    <p>Customized services to match your unique preferences</p>
+    <p>High-quality event planning and execution</p>
+    <p>Top-tier photography and media services to capture every moment</p>
+    <p>Customer-centric approach to ensure complete satisfaction</p>
+    <p>
+      Join us on this journey of crafting unforgettable experiences...
+    </p>
+    <hr />
+
+    <div>Connect with us</div>
+            
+          <div class="social-media">
+            <img src="./icons/instagram.png" />
+            <img src="./icons/facebook.png" />
+            <img src="./icons/youtube.png" />
+          </div>
+          
+      </div>
+   
+  </div>
+</div>
+</section>
+
+    <!-- Bootstrap JS CDN -->
+    <script>
+
+      
+
+(function() {
+    const captions = [
+        "Capturing Moments, Creating Memories",
+        "Creating Lasting Impressions",
+        "Your Moments, Our Passion",
+        "Framing Joyful Memories",
+        "Celebrating Life's Milestones",
+        "Every Picture Tells a Story",
+        "Cherishing Special Occasions"
+    ];
+
+    let currentIndex = 0; 
+
+    function changeCaption() {
+        const captionDiv = document.getElementById("caption1");
+        captionDiv.textContent = captions[currentIndex];
+        currentIndex = (currentIndex + 1) % captions.length;
+    }
+
+    setInterval(changeCaption, 5000);
+    changeCaption();
+})(); 
+
+const slides = document.querySelectorAll(".img-slide");
+let currentSlide = 0;
+const totalSlides = slides.length;
+
+function showSlide() {
+    slides[currentSlide].classList.remove("active");
+    slides[currentSlide].classList.add("inactive"); 
+    currentSlide = (currentSlide + 1) % totalSlides; 
+    slides[currentSlide].classList.remove("inactive"); 
+    slides[currentSlide].classList.add("active");
+}
+
+setInterval(showSlide, 5000); 
+
+const relatedImages = [
+    ["./images/projectimg/1.jpeg", "./images/projectimg/2.jpeg", "./images/projectimg/3.jpeg", "./images/projectimg/4.jpeg", "./images/projectimg/5.jpeg", "./images/projectimg/6.jpeg", "./images/projectimg/7.jpeg"],
+    ["./images/projectimg/10.jpeg", "./images/projectimg/8.jpeg", "./images/projectimg/9.jpeg"],
+    ["./images/projectimg/11.webp", "./images/projectimg/12.jpg", "./images/projectimg/13.jpeg", "./images/projectimg/14.jpeg", "./images/projectimg/15.jpeg"],
+];
+
+const imageContainers = document.querySelectorAll(".image-container");
+const popupModal = document.getElementById("popup-modal");
+const popupContent = document.querySelector(".popup-content");
+const closeButton = document.querySelector(".close-btn");
+
+imageContainers.forEach((container, index) => {
+    container.addEventListener("click", () => {
+        popupContent.innerHTML = "";
+        relatedImages[index].forEach((imageSrc) => {
+            const img = document.createElement("img");
+            img.src = imageSrc;
+            popupContent.appendChild(img);
+        });
+        popupModal.style.display = "flex";
+    });
+});
+
+closeButton.addEventListener("click", () => {
+    popupModal.style.display = "none";
+});
+
+window.addEventListener("click", (e) => {
+    if (e.target === popupModal) {
+        popupModal.style.display = "none";
+    }
+});
+
+document.querySelectorAll('.image-container').forEach(container => {
+    container.addEventListener('click', function() {
+        const index = this.getAttribute('data-index');
+        
+        const titles = [
+            "Event Photography",
+            "Event Planning",
+            "Professional Interview"
+        ];
+        
+        const descriptions = [
+            "Capturing moments that matter, we specialize in telling stories through our lens, ensuring every event is remembered with stunning images.",
+            "From concept to execution, we manage every detail to create unforgettable experiences that reflect your vision and exceed your expectations.",
+            "Our team conducts thorough and engaging interviews, providing you with in-depth insights and professional quality that highlights your story."
+        ];
+        
+        const titleElement = document.getElementById('project-title');
+        const textElement = document.getElementById('project-text');
+
+        titleElement.classList.add('fade-out');
+        textElement.classList.add('fade-out');
+
+        setTimeout(() => {
+            titleElement.innerText = titles[index];
+            textElement.innerText = descriptions[index];
+
+            titleElement.classList.remove('fade-out');
+            textElement.classList.remove('fade-out');
+
+            titleElement.classList.add('fade-in');
+            textElement.classList.add('fade-in');
+        }, 500);
+    });
+});
+
+document.querySelector('.image-container[data-index="0"]').click();
+
+const reviews = [
+    { username: "User1", message: "This service is amazing! Highly recommended!", avatar: "./icons/man.png" },
+    { username: "User2", message: "A fantastic experience from start to finish.", avatar: "./icons/man.png" },
+    { username: "User3", message: "I loved every moment! Will be back again.", avatar: "./icons/man.png" },
+    { username: "User4", message: "Exceptional quality and service. Highly satisfied!", avatar: "./icons/man.png" },
+    { username: "User5", message: "I can't recommend this enough. Simply the best!", avatar: "./icons/man.png" }
+];
+
+let currentIndex = 0;
+
+function updateReviews() {
+    const reviewElements = document.querySelectorAll('.review');
+    reviewElements.forEach((review, index) => {
+        const reviewData = reviews[(currentIndex + index) % reviews.length];
+        review.querySelector('.username').innerText = reviewData.username;
+        review.querySelector('.review-message').innerText = reviewData.message;
+        review.querySelector('.review-avatar').src = reviewData.avatar;
+    });
+    currentIndex = (currentIndex + 1) % reviews.length;
+}
+
+setInterval(updateReviews, 3000);
+
+document.getElementById('addReviewButton').addEventListener('click', function() {
+    const username = document.getElementById('username').value;
+    const message = document.getElementById('reviewMessage').value;
+    
+    if (username && message) {
+        const newReview = { username: username, message: message, avatar: "default_avatar.png" };
+        reviews.push(newReview);
+        document.getElementById('username').value = '';
+        document.getElementById('reviewMessage').value = '';
+        alert('Your review has been added!');
+    } else {
+        alert('Please fill in both fields.');
+    }
+});
+
+updateReviews();
+    
+document.querySelectorAll('.nav-link').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
