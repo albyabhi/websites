@@ -1,0 +1,106 @@
+.content-container {
+  display: flex;
+  justify-content: center; /* Center both sections horizontally */
+  align-items: center; /* Center both sections vertically */
+  padding: 100px; /* Adjusted horizontal and vertical padding */
+  min-height: 80vh; /* Full viewport height to center vertically */
+  gap: 20px; /* Small space between the sections */
+}
+
+/* Left Section */
+.left-section {
+  flex: 1;
+  max-width: 45%; /* Restrict width to keep the sections closer */
+}
+
+/* Intro Text */
+.intro-text {
+  margin-bottom: 30px;
+}
+
+.greeting {
+  font-size: 24px;
+  color: #535C91;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 78px;
+  color: #9290C3;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-family: 'Pacifico', cursive;
+}
+
+.profession {
+  font-size: 24px;
+  color: #535C91;
+  margin-bottom: 30px;
+}
+
+/* Description */
+.description {
+  max-width: 600px;
+  font-size: 18px;
+  color: #9290C3;
+  line-height: 1.6;
+  margin-top: 20px;
+  padding: 0 15px;
+}
+
+.description p {
+  margin-bottom: 20px;
+}
+
+/* Right Section */
+.right-section {
+  flex: 1;
+  max-width: 45%; /* Restrict width to keep the sections closer */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 500px; /* Increased size */
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+    gap: 20px; /* Maintain consistent spacing on smaller screens */
+  }
+
+  .left-section,
+  .right-section {
+    max-width: 100%; /* Allow full width for smaller screens */
+  }
+
+  .right-section {
+    margin-top: 20px;
+  }
+
+  .name {
+    font-size: 36px;
+  }
+
+  .profession, .greeting {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .profile-image {
+    max-width: 250px; /* Smaller size for smaller screens */
+  }
+}

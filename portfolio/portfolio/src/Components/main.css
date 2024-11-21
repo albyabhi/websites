@@ -1,0 +1,43 @@
+/* Main container styling */
+.main-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+}
+
+/* Sidebar styling for larger screens */
+.sidebar {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+/* Content section */
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Media Query for mobile view */
+@media screen and (max-width: 768px) {
+  /* Change layout to column for mobile screens */
+  .main-container {
+    flex-direction: column; /* Stack the sidebar and content vertically */
+  }
+
+  /* Sidebar should be at the top on mobile */
+  .sidebar {
+    width: 100%; /* Full width for the sidebar */
+    height: 60px; /* Smaller height for the appbar effect */
+    position: sticky; /* Stick to the top */
+    top: 10px; /* Fix it to the top */
+    flex-direction: row; /* Horizontal layout for the sidebar buttons */
+    justify-content: space-evenly;
+  }
+
+  /* Adjust content for mobile screens */
+  .content {
+    padding: 10px;
+    
+  }
+}

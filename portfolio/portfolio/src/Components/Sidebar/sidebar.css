@@ -1,0 +1,89 @@
+/* Sidebar button styling */
+.sidebar-btn {
+  margin: 10px 0;
+  padding: 15px 30px;
+  border-radius: 20px;
+  background-color: #1B1A55;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  width: 80%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Sidebar container */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 300px;
+  height: 100vh;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* When sidebar is on mobile, make it horizontal (like an Appbar) */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 100%; /* Full width */
+    height: auto; /* Auto height */
+    flex-direction: row; /* Make the sidebar items align horizontally */
+    justify-content: space-around; /* Space the buttons out */
+    position: sticky; /* Keep the sidebar fixed at the top */
+    top: 0; /* Stick to the top of the page */
+  }
+
+  .sidebar-btn {
+    margin: 0 10px; /* Reduce margin between buttons */
+    padding: 10px 20px; /* Adjust padding */
+    width: auto; /* Make the width auto for horizontal layout */
+  }
+
+  .sideHead {
+    display: none; /* Hide the header on mobile */
+  }
+}
+
+.sidebar-btn:hover {
+  background-color: #d1d1d1;
+  color: #070F2B;
+  transform: scale(1.05);
+}
+
+.sidebar-btn.selected {
+  background-color: #3498db;
+  color: white;
+}
+
+.sideHead {
+  text-align: center;
+  margin-bottom: 20px;
+  animation: slideInLeft 1s ease-in-out;
+}
+
+.sideHead h1 {
+  font-size: 44px;
+  font-weight: bold;
+  color: #3498db;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sideHead h2 {
+  font-size: 28px;
+  font-weight: 400;
+  color: #3498db;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 100%; /* Full width */
+    flex-direction: row; /* Align items horizontally */
+    justify-content: space-evenly; /* Space out buttons */
+    height: 60px; /* Set a fixed height for the appbar-like effect */
+  }
+}

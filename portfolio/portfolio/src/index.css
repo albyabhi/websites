@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%; /* Ensure the page takes full height */
+  overflow: hidden; /* Hide scrollbars */
+}
+
+/* If you want to still allow scrolling in specific areas */
+body {
+  background-color: #070F2B;
+  color: rgba(255, 255, 255, 0.87);
+  font-family: 'Urbanist', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+}
